@@ -1,0 +1,35 @@
+@keyframes moveSlots {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    50% {
+        transform: translateY(10%)
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+.slots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.slots__animation-middle {
+    animation: moveSlots 1s linear infinite;
+}
+
+.slots__animation-end {
+    animation: moveSlots 1.5s linear infinite;
+}
+
+.roulette__empty-image-url {
+    font-size: 34px;
+    line-height: 36px;
+    margin: 30px 0;
+}
